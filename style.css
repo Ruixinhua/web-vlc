@@ -1,0 +1,350 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0
+}
+
+/*顶部固定*/
+.top{
+    left: 0;
+    width:100%;
+    height:60px;
+    background: #0e53a7;
+    background: -webkit-linear-gradient(top left, #0e53a7 0%, #6899d3 100%);
+    background: linear-gradient(to bottom right, #0e53a7 0%, #6899d3 100%);
+    position:fixed; 
+    top:0;
+    z-index: 999;
+    background-repeat: no-repeat;
+}
+
+/*顶部文字*/
+.nav{
+    font-weight:300;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*注册 登录按钮*/
+.right{
+    float:right;
+    text-decoration:none;
+    color: white;
+}
+
+/*顶部按钮*/
+.nav button{
+    text-align: center;
+    outline: 0;
+    border: 0px;
+    color: white;
+    width: 120px;
+    height:60px;
+    cursor: pointer;
+    font-size: 25px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    background: none;
+    font-family:"宋体";
+    margin-top: -20px;
+
+}
+
+
+.nav button:hover{
+    background-color: #1586ff;
+}
+
+
+/*全局背景*/
+.background {
+    height: 110%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/*播放器*/
+object{
+    z-index: 0;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+#test{
+    margin-left: 500px;
+}
+/*表格*/
+table{
+    margin-top: 10px;
+    margin-left: 350px;
+    font-family: verdana,arial,sans-serif;
+    font-size:20px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+    background-size:100% 100%;
+}
+table>th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+table>td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+/*滑动条*/
+.range{
+    width: 470px;
+    margin-left: 350px; 
+    -webkit-appearance:none;
+    border-radius: 10px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
+
+.range::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+}
+
+.range:focus {
+    outline: none;
+}
+
+/*width 放大 缩小 三个按钮*/
+.control{
+    color: white;
+    background-color: #BF8A30;
+    border-color: #EEEEEE;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+    margin-top: -30px;
+    margin-left:  65px;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.control:hover{
+    background-color: grey;
+    text-decoration: none;
+    outline: none;
+}
+
+/*enter输入条*/
+.submit{
+    font-size: 20px;
+/*    color: green;*/
+    margin-top: -30px;
+    margin-left: 300px;
+}
+
+.submit input[type="text"]{
+    width: 400px;
+    height: 20px;
+}
+
+.move{
+    margin-left: 220px;
+}
+
+/*第一条分割线以上整体调节*/
+.aboveFirstLine{
+    margin-left: -200px;
+}
+
+/*分割线*/
+.line_01{
+    top: -50px;
+    height: 1px;  
+    border-top: 1px solid #ddd;  
+    width: 370px;
+    background: grey;
+} 
+
+
+/*.line_01{  
+    position: relative;  
+    top: -8px;  
+    background: white;  
+    padding: 0 20px;  
+} */
+
+/*评论区整体调节*/
+.discusstext{
+    margin-left:20px; 
+    height: 50px;
+    font-size: 20px;
+    color: green;
+
+}
+
+.discussion{
+    margin-top: -560px;
+    margin-left: 782px;
+}
+
+.background2{
+    margin-top: -20px; 
+    margin-left: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+.list{
+    margin-top: 30px;
+} 
+
+/*评论区*/
+/*.Input_Box {
+    margin-top: -20px; 
+    width: 365px;   
+    height: 50px;  
+    border: 1px solid #ccc;
+    transition: border linear .2s, box-shadow linear .5s;     
+    border-radius: 5px;     
+    background-color: #fff;         
+    box-shadow: 0 0 5px #ccc;     
+}   */  
+.Input_Box>textarea { 
+    font-size: 20px;  
+    width: 360px;     
+    height: 50px;     
+    padding: 5px;     
+    outline: none;     
+    border: 0px solid #fff;     
+    resize: none;         
+    border-radius: 5px;     
+}
+
+
+/*评论区中的确认按钮*/
+.postBtn { 
+/*    margin-top: 10px; */
+/*    margin-left: -30px;   */
+    position: relative;
+    font-weight:bold;
+    width: 55px; 
+    height: 35px; 
+    border-radius: 3px; 
+    border: 1px solid #c0c0c0;    
+}     
+.postBtn { 
+color: #678333;
+border-color: #a7c570;  
+box-shadow:inset 0 1px 0 #d5e89f,0 1px 0 rgba(0,0,0,.2);
+background:-webkit-linear-gradient(top,#cae285,#9cc15c);
+background:-moz-linear-gradient(top,#cae285,#9cc15c);
+background:-ms-linear-gradient(top,#cae285,#9cc15c); 
+background:-o-linear-gradient(top,#cae285,#9cc15c); 
+background:linear-gradient(top,#cae285,#9cc15c); 
+}
+.postBtn:hover{
+background:-webkit-linear-gradient(top,#d8ed9b,#acce70); 
+background:-moz-linear-gradient(top,#d8ed9b,#acce70); 
+background:-o-linear-gradient(top,#d8ed9b,#acce70); 
+background:-ms-linear-gradient(top,#d8ed9b,#acce70); 
+background:linear-gradient(top,#d8ed9b,#acce70); 
+}
+.postBtn:active{
+top:1px;
+box-shadow:inset 0 1px 3px #5a7d1e;
+background:-webkit-linear-gradient(top,#84ad3e,#84ad3e); 
+background:-moz-linear-gradient(top,#84ad3e,#84ad3e); 
+background:-ms-linear-gradient(top,#84ad3e,#84ad3e); 
+background:-o-linear-gradient(top,#84ad3e,#84ad3e); 
+background:linear-gradient(top,#84ad3e,#84ad3e); 
+}
+
+
+/*翻页按钮*/
+.btn{ 
+    color: white;
+    background-color: #61b7cf;
+    border-color: #EEEEEE;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.btn:hover{
+    background-color: grey;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+
+
+/*footer*/
+footer{
+    z-index: 2;
+    height: 30px;
+    position: relative;
+    width : 100%;
+    top:2%;
+    background: #2F3584;
+    background: -webkit-linear-gradient(top left, #2f3584 0%, #7279d8 100%);
+    background: linear-gradient(to bottom right, #2f3584 0%, #7279d8 100%);
+    text-align:center;
+} 
+
+.href {
+    margin-top: 20px;
+    z-index: 3;
+    font-weight: 300;
+    font-size: 20px;
+    color:white;
+    text-decoration:none;
+}
+
+.href:hover {
+    height:30px;
+    background-color: #006363;
+}    
