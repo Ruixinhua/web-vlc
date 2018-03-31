@@ -4,7 +4,7 @@
     position: relative;
     top: 0;
     left: 0;
-    background-color: blue;
+    
     z-index: 99;
 }
 
@@ -59,20 +59,13 @@
     height: 20px;
 }
 
-.user {
-    position: relative;
-    top: -50px;
-}
-
 .user-center {
-    position: relative;
+    position: absolute;
     background: none;
-    width: 30px;
-    height: 30px;
     left: 960px;
+    top: 10px;
     -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 15px;           
     z-index: 99;
     -webkit-border-radius: 50px;
     border-radius: 50px;
@@ -80,8 +73,8 @@
 
 table {
     position: relative;
-    top: 0px;
-    left: 10px;
+    top: 20px;
+    left: 50px;
     text-align: center;
     height: 60px;
 }
@@ -90,7 +83,7 @@ table {
     position: relative;
     top: 40px;
     left: 30px;
-    width: 240px;
+    width: 300px;
     height: 1800px;
 }
 
@@ -167,23 +160,19 @@ table {
 }
 
 .video {
-/*    border:10px red solid;*/
-    width: 1050px;
+    width: 700px;
     position: relative;
     top: 0;
     left: 0;
     height: 500px;
-/*    background-color: red;*/
+    /*			background-color: red;*/
     z-index: 1;
 }
 
-
-
 .range_1 {
-    width: 600px;
+    width: 500px;
     position: relative;
-    top: -10px;
-    left:30px;
+    top: 10px;
 }
 
 .range_1::-webkit-slider-thumb {
@@ -213,29 +202,19 @@ table {
     outline: none;
 }
 
-.video_part{
+.playerall {
     position: relative;
-    height: 500px;
+    top: 20px;
+    left: 0;
 }
 
-.playerall{
-    position: relative;
-    top: 50px;
-}
-
-.player{
-    position: relative;
-    top: -30px;
-    z-index: 5;
-}
-
-.parameter {
+.session {
     position: relative;
     width: 688px;
-    top: -50px;
+    top: 32px;
     left: 0;
     height: 60px;
-    /*          background-color: grey;*/
+    /*			background-color: grey;*/
 }
 
 .video_name {
@@ -286,38 +265,23 @@ table {
     background-color: yellow;
 }
 
-.barrage{
-    position: relative;
-    width: 300px;
-    height: 480px;
-    top: -490px;
-    left: 725px;
-}
-
-.barrage_content{
-    position: relative;
-    top: 20px;
-    height: 400px;
-    width: 300px;
-    background-color: blue;
-}
 .relative_video {
     width: 350px;
     position: relative;
-    top: 0px;
+    top: -500px;
     left: 700px;
     height: 2000px;
-    /*          background-color: green;*/
+    /*			background-color: green;*/
     z-index: 1;
 }
 
 .comment {
     width: 700px;
     position: relative;
-    top: -1980px;
+    top: -1950px;
     left: 0;
     height: 1500px;
-    /*          background-color: brown;*/
+    /*			background-color: brown;*/
     z-index: 1;
 }
 
@@ -421,7 +385,7 @@ table {
     position: relative;
     top: 60px;
     left: 0;
-    /*          background-color: orange;*/
+    /*			background-color: orange;*/
     width: 700px;
     height: 1106px;
 }
